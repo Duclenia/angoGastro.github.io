@@ -1,0 +1,54 @@
+#banner{
+    background-size: cover;
+    background:url("../imagem/banner.jpg") no-repeat center top;
+	background-attachment:fixed;
+	background-size:cover;
+	height:40vh;
+	min-height:100%;
+}
+.banner-text {
+    display: table;
+    height: 60%;
+    padding: 10px;
+}
+.banner-text h1 {
+    letter-spacing: 2.7px;
+    float: left;
+	font-size: 74px;
+    line-height: 100px;
+	color:#fff;
+	padding-top:100px;
+  
+}
+.banner-text h1 span {
+   display: inline-block;
+   color: #EA9D3F;
+   border-bottom: 2px solid #EA9D3F;
+}
+
+/* sobre Nós */
+#sobre{
+    background:#E6E6E6;
+    padding: 80px 50px;
+
+}
+.sobre-nos{
+    padding: 0 16%;
+}
+
+.sobre-texto{
+    position: relative;
+    padding: 40px 30px;
+    text-align: justify;
+}
+
+.sobre-titulo{
+	font-size:52px;
+	font-weight: bold;
+    text-align: center;
+}
+
+#sobre h3{
+    font-weight: 600;
+	font-size:20px;
+}

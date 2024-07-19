@@ -1,0 +1,65 @@
+
+#banner{
+    background-size: cover;
+    background:url("../imagem/banner.jpg") no-repeat center top;
+	background-attachment:fixed;
+	background-size:cover;
+	height:40vh;
+	min-height:100%;
+}
+.banner-text {
+    display: table;
+    height: 60%;
+    padding: 10px;
+}
+.banner-text h1 {
+    letter-spacing: 2.7px;
+   float: left;
+	font-size: 74px;
+    line-height: 100px;
+	color:#fff;
+	padding-top:100px;
+  
+}
+.banner-text h1 span {
+   display: inline-block;
+   color: #EA9D3F;
+   border-bottom: 2px solid #EA9D3F;
+}
+
+
+  .pratos-item .item-header {
+    padding: 20px 10px;
+
+  }
+
+  .pratos-item .item-body {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+  }
+  
+  .item-body  p strong span{
+  
+      color: #e75b1e;
+  }
+  .pratos-item{
+    font-size: 30px;
+      border:1px solid #e75b1e;
+  }
+
+  .lista-grupo-item {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+  }
+  .lista-grupo-item span{
+    border-radius: 50%;
+    background: #e75b1e;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+  }
+

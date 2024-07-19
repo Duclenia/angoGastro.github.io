@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/modernizer.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="imagem/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="index.html">Principal</a></li>
+                                    <li><a href="sobre.html">Sobre Nós</a></li>
+                                    <li><a href="pratos.html">Pratos</a></li>
+                                    <li><a href="#galeria">Galeria</a></li>
+                                    <li><a href="#footer">Contacto</a></li>
+
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section>
+        <div id="banner">
+            <div class="banner-text">
+
+
+            </div>
+        </div>
+    </section>
+
+    <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center">
+                                Cadastro
+                            </h2>
+                        </div>
+                        <p>Faça o seu cadastro para receber receitas diarias!</p>
+                        <div class="social_login">
+                            <div class="">
+                                <a href="#" class="social_box fb" onclick="loginWithFacebook()">
+                                    <span class="icon"><i class="fa fa-facebook"></i></span>
+                                    <span class="icon_title">Login com Facebook</span>
+
+                                </a>
+
+                                <a href="https://encurtador.com.br/MoJwR" target="_blank" class="social_box google">
+
+                                    <span class="icon"><i class="fa fa-google"></i></span>
+                                    <span class="icon_title">Login com a Google</span>
+                                </a>
+                            </div>
+
+                            <div class="centeredText" style="text-align: center;">
+                                <span>Ou use seu endereço de E-mail</span>
+                            </div>
+
+                            <div class="action_btns">
+                                <div class="one_half"><a href="#" data-toggle="modal" data-target="#1"
+                                        class="btn">Conectar-se</a></div>
+                                <div class="one_half last"><a href="#" data-toggle="modal" data-target="#2"
+                                        class="btn">Cadastrar-se</a></div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <div class="modal-body">
+                                        <form id="contact-form" class="reservations-box" name="contactform"
+                                            onsubmit="return validateForm(event)">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-box">
+                                                    <label for="email2">E-mail</label>
+                                                    <input type="email" name="email" id="email2" required="required"
+                                                        data-error="E-mail id is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-box">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" name="password" id="password"
+                                                        required="required" data-error="Password is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="reserve-book-btn text-center">
+                                                    <button class="btn" type="submit" value="SEND"
+                                                        id="submit">Entrar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <a href="#" class="forgot_password">Forgot password?</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <div class="modal-body">
+                                        <form id="contact-form" class="reservations-box" name="contactform"
+                                            onsubmit="return validateForm(event)">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-box">
+                                                    <label for="password">Nome Completo</label>
+                                                    <input type="text" name="nome" id="nome" required="required"
+                                                        data-error="Password is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-box">
+                                                    <label for="email2">E-mail</label>
+                                                    <input type="email" name="email" id="email2" required="required"
+                                                        data-error="E-mail id is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-box">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" name="password" id="password"
+                                                        required="required" data-error="Password is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-box">
+                                                    <label for="password">Telefone</label>
+                                                    <input type="tel" name="tel" id="tel" required="required"
+                                                        data-error="Password is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="reserve-book-btn text-center">
+                                                    <button class="btn" type="submit" value="SEND"
+                                                        id="submit">Entrar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <a href="#" class="forgot_password">Esqueceu sua palavra pass?</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="footer-main">
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="imagem/logo.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>Sobre Nós</h3>
+                                <p>A GastroAngolana é o maior site de receitas de Angola, reúne uma comunidade de
+                                    apaixonados
+                                    por comida angolana.
+                                </p>
+                                <ul class="socials-box footer-socials pull-left">
+
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://api.whatsapp.com/send?phone=929520238" target="_blank">
+                                            <div class="social-circle-border"><i class="fa fa-whatsapp"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <div class="social-circle-border"><i class="fa fa-instagram"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Nossos Pratos</h3>
+                                <ul>
+                                    <li><a href="pratos.html">Calulo</a></li>
+                                    <li><a href="pratos.html">Muamba de Galinha</a></li>
+                                    <li><a href="pratos.html">Mufete</a></li>
+                                    <li><a href="pratos.html">Fumbua</a></li>
+                                    <li><a href="pratos.html">Kizaca</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contacte-nos</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>Bairro São Paulo, Luanda Angola</span>
+
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                                        (+244) 999 010 916
+                                    </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">angogastro@gmail.com</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2024 todos os direitos reservados, desenvolvido por
+                                <a href="#" target="_blank">Duclenia</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="scrollup" style="display: none;"></a>
+
+
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/validarForm.js"></script>
+    <script src="js/loginFB.js"></script>
+  
+
+</body>
+
+</html>
